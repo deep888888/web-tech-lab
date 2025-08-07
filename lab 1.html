@@ -1,25 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Tags Example</title>
+    <title>HTML Tags Example with Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        b {
+            color: #d32f2f;
+        }
+
+        i {
+            color: #1976d2;
+        }
+
+        u {
+            color: #388e3c;
+        }
+
+        sup, sub {
+            font-size: 0.8em;
+            color: #7b1fa2;
+        }
+
+        del {
+            text-decoration: line-through;
+            color: #9e9e9e;
+        }
+
+        ins {
+            text-decoration: underline;
+            color: #388e3c;
+        }
+
+        mark {
+            background-color: #ffeb3b;
+            color: black;
+            padding: 2px 4px;
+        }
+
+        tt {
+            font-family: 'Courier New', monospace;
+            background-color: #e0f7fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        abbr {
+            border-bottom: 1px dotted #333;
+            cursor: help;
+            color: #5e35b1;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <p>This is a paragraph using the <b>bold</b>, <i>italic</i>, and <u>underline</u> tags.</p>
+    <div class="container">
 
-    <p>Here is a <sup>superscript</sup> and a <sub>subscript</sub> example.</p>
+        <div class="card">
+            <p>This is a paragraph using the <b>bold</b>, <i>italic</i>, and <u>underline</u> tags.</p>
+        </div>
 
-    <p>This text was <del>deleted</del> and this was <ins>inserted</ins>.</p>
+        <div class="card">
+            <p>Here is a <sup>superscript</sup> and a <sub>subscript</sub> example.</p>
+        </div>
 
-    <p>This is <mark>highlighted text</mark> using the mark tag.</p>
+        <div class="card">
+            <p>This text was <del>deleted</del> and this was <ins>inserted</ins>.</p>
+        </div>
 
-    <p><tt>Monospaced text</tt> using the tt (teletype) tag.</p>
+        <div class="card">
+            <p>This is <mark>highlighted text</mark> using the mark tag.</p>
+        </div>
 
-    <p>This is an abbreviation: <abbr title="Artificial Intelligence">AI</abbr></p>
+        <div class="card">
+            <p><tt>Monospaced text</tt> using the tt (teletype) tag.</p>
+        </div>
 
-    <p>Here is an image:</p>
-    <img src="https://placehold.co/600x400
-    " alt="Placeholder Image">
+        <div class="card">
+            <p>This is an abbreviation: <abbr title="Artificial Intelligence">AI</abbr></p>
+        </div>
+
+        <div class="card image-container">
+            <p>Here is an image:</p>
+            <img src="https://images.squarespace-cdn.com/content/v1/5b061f0e0dbda31446baccc0/1527893082224-1QNG73UB18IXT2MF3XNV/image-asset.jpeg?format=2500w" alt="Placeholder Image">
+        </div>
+
+    </div>
 
 </body>
 </html>
